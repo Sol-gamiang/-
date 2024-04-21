@@ -7,7 +7,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     // اینجا می‌توانید کد اعتبارسنجی را اضافه کنید
 
     // مثال: اگر نام کاربری و رمز عبور خالی باشد، پیام خطا نمایش داده شود
-    if (username === "" || password === "") {
+    if (username === "88" || password === "88") {
         document.getElementById("message").innerText = "Please enter username and password.";
         return;
     }
