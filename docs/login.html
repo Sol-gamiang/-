@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <script>
-        document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting
-
-            // Get the values from the form
+        function login() {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
 
-            // Check if the username and password are correct
-            if (username === 'your_username' && password === 'your_password') {
+            // بررسی مقادیر وارد شده
+            if (username === '88' && password === '88') {
                 document.getElementById('message').innerText = 'Login successful!';
             } else {
                 document.getElementById('message').innerText = 'Invalid username or password';
             }
-        });
+        }
     </script>
 </head>
 <body>
     <h2>Login</h2>
-    <form id="loginForm">
+    <form id="loginForm" onsubmit="login(); return false;">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Password:</label><br>
